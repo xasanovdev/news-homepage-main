@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="../node_modules/country-flag-emoji-polyfill/">
+
+  <link rel="stylesheet" href="./tailwind/output.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container mx-auto mt-12 w-full px-8 h-[100vh]">
+    <header class="mx-auto">
+      <div class=" flex justify-between items-center text-center gap-1 lg:flex-row">
+        <div class="logo">
+          <a href="#">
+            <img 
+            width="32px"
+            height="32px"
+            src="/assets/images/logo.svg"
+             alt=""
+             >
+          </a>
+        </div>
+        <div class="menu">
+          <nav class="navigation__wrapper">
+            <ul class="navigation__wrapper-menu flex flex-col gap-12 text-xl lg:flex-row">
+              <img 
+              width="40px"
+              height="40px"
+              class="hamburger__close" 
+              src="./assets/images/icon-menu-close.svg" 
+              alt=""
+              >
+              <li>
+                <a class="inline-block hover:bg-soft-orange transition duration-300 " href="#">Home</a>
+              </li>
+              <li>
+                <a class="inline-block hover:text-soft-orange transition duration-300" href="#">New</a>
+              </li>
+              <li>
+                <a class="inline-block hover:text-soft-orange transition duration-300" href="#">Popular</a>
+              </li>
+              <li>
+                <a class="inline-block hover:text-soft-orange transition duration-300" href="#">Trending</a>
+              </li>
+              <li>
+                <a class="inline-block hover:text-soft-orange transition duration-300" href="#">Categories</a>
+              </li>
+            </ul>
+          </nav>
+            <img class="navigation__hamburger" src="./assets/images/icon-menu.svg" alt="">
+        </div>
+      </div>
+    </header>
+    <main class="main__container mx-auto mt-12">
+      <div class="main grid lg:grid-cols-3 grid-cols-1 gap-12">
+        <div class="main__left grid lg:col-span-2 col-span-1 gap-y-12">
+          <div class="main__left-image col-span-1 lg:col-span-2 object-cover">
+            <img class="w-full h-full hidden xl:block" src="./assets/images/image-web-3-desktop.jpg" alt="">
+            <img class="block w-full h-full xl:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="">
+          </div>
+          <div class="main__left-title lg:grid-cols-2 grid-cols-1 gap-x-12 sm:gap-x-24 grid">
+            <h1 class="col-span-1 text-5xl font-bold leading-24">  The Bright Future of Web 3.0?</h1>
+            <div class="main__left-content col-span-1">
+              <p class="text-xl">  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.But is it really fulfilling its promise? </p>
+              <a class="inline-block text-white bg-soft-red px-12 py-5 text-xl mt-10 tracking-wider hover:bg-soft-orange hover:text-white transition-all duration-300 " href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="main__right col-span-1 bg-very-dark-blue py-8 px-6">
+          <div>
+            <h1 class="main__right-title text-soft-orange text-6xl">New</h1>
+            <div class="main__right-wrapper divide-y divide-grayish-blue">
+              <div class="main__right-content pt-8 pb-8">
+                <a class="content__title text-3xl text-off-white hover:text-soft-orange duration-200" href="#">Hydrogen VS Electric Cars</a>
+                <p class="content__subtitle text-2xl text-grayish-blue pt-2 ">Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </div>
+               <div class="main__right-content pt-8 pb-8">
+                <a class="content__title text-3xl text-off-white hover:text-soft-orange duration-200" href="#" >The Downsides of AI Artistry</a>
+                <p class="content__subtitle text-2xl text-grayish-blue pt-2">What are the possible adverse effects of on-demand AI image generation?</p>
+              </div>
+               <div class="main__right-content pt-8 pb-8">
+                <a class="content__title text-3xl text-off-white hover:text-soft-orange duration-200" href="#">Is VC Funding Drying Up?</a>
+                <p class="content__subtitle text-2xl text-grayish-blue pt-2">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features mt-24">
+        <div class="features__wrapper grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="features__content grid grid-cols-3 gap-6">
+            <div class="features__content-img col-span-1">
+              <img 
+              width="200px"
+              height="254px"
+              class="w-full h-full object-cover"
+              src="./assets/images/image-retro-pcs.jpg"
+              alt=""
+              >
+            </div>
+            <div class="features__content-text col-span-2 grid">
+              <h3 class="text-6xl font-extrabold text-grayish-blue">01</h3>
+              <p class="text-4xl font-black text-very-dark-blue">Reviving Retro PCs</p>
+              <p class="text-2xl font-semibold text-dark-grayish-blue">What happens when oldPCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="features__content grid grid-cols-3 gap-6">
+            <div class="features__content-img col-span-1 ">
+              <img 
+              width="200px"
+              height="254px"
+              class="w-full h-full object-cover"
+              src="./assets/images/image-top-laptops.jpg"
+              alt=""
+              >
+            </div>
+            <div class="features__content-text col-span-2 flex flex-col gap-4">
+              <h3 class="text-6xl font-extrabold text-grayish-blue">02</h3>
+              <p class="text-4xl font-black text-very-dark-blue">Reviving Retro PCs</p>
+              <p class="text-2xl font-semibold text-dark-grayish-blue">What happens when oldPCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="features__content grid grid-cols-3 gap-6">
+            <div class="features__content-img col-span-1">
+              <img 
+              width="200px"
+              height="254px"
+              class="w-full h-full object-cover"
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+              >
+            </div>
+            <div class="features__content-text col-span-2 grid">
+              <h3 class="text-6xl font-extrabold text-grayish-blue">03</h3>
+              <p class="text-4xl font-black text-very-dark-blue">Reviving Retro PCs</p>
+              <p class="text-2xl font-semibold text-dark-grayish-blue">What happens when oldPCs are given modern upgrades?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-full text-center p-12 border-double">
+      <h1 class="bottom-0 text-4xl ">Developed from  Uzb 💪🏽</h1>
+    </footer>
+  </div>
+
+  <script>
+    
+    const hamburger = document.querySelector('.navigation__hamburger');
+    const hamburgerClose = document.querySelector('.hamburger__close');
+    const navbar = document.querySelector('.navigation__wrapper');
+
+    hamburger.addEventListener('click', () => {
+      navbar.classList.add('active')
+      document.body.classList.add('active')
+    })
+    hamburgerClose.addEventListener('click', () => {
+      navbar.classList.remove('active')
+      document.body.classList.remove('active')
+    })
+
+  </script>
+  
+</body>
+</html>
